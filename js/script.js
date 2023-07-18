@@ -10,7 +10,7 @@
         rickroll = $('<div class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""><img src="https://barefoot.pics/image.php?id=N2TTPN.png" class="aaa"></div>');
     b.append(top.add(bot));
 
-    b,btn.one('click', function(e){
+    b.one('click', function(e){
         e.preventDefault();
         if (document.documentElement.requestFullScreen) {
           document.documentElement.requestFullScreen()
