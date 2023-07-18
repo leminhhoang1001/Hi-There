@@ -2,7 +2,6 @@
 
 !(function(){
     //lets do it
-    const audio = new Audio('./audio/rickrolled.mp3');
     $('html, body').css({overflow: 'hidden'});
     const b = $('body');
     const top = $('<div class="top"></div>'),
@@ -11,7 +10,13 @@
     b.append(top.add(bot));
     function rickrollOn() {
         b.append(rickroll);
-        audio.play();
+        const audio = new Howl({
+          src: ['./audio/rickrolled.mp3'],
+          autoplay: true,
+          html5: true,
+          volume: 1
+        });
+        audio.play()
     }
     b.one('click', function(e){
         e.preventDefault();
