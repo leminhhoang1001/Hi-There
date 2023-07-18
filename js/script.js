@@ -30,7 +30,7 @@
     function rickrollOn() {
       b.append(rickroll);
       var audio = new Howl({
-        src: ['./audio/rickrolled.mp3'],
+        src: ['./rickrolled.mp3'],
         autoplay: true,
         html5: true
       });
