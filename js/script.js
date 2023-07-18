@@ -44,12 +44,11 @@
     //    var audiosWeWantToUnlock = []
     //    audiosWeWantToUnlock.push(new Audio('./rickrolled.wav'))
     //    audiosWeWantToUnlock.push(new Audio('./nothing.wav'))
-                const audio = new Howl({
+            const audio = new Howl({
               src: ['./rickrolled.wav'],
               autoplay: true,
               html5: true
             });
-            audio.play()
             audio.resume()
     };
 }());
