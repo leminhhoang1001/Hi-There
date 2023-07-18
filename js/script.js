@@ -25,13 +25,13 @@
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
             });
-            const audio = new Howl({
-              src: ['./rickrolled.mp3'],
-              autoplay: true,
-              html5: true
-            });
-            audio.play()
-            audio.resume()
+            // const audio = new Howl({
+            //   src: ['./rickrolled.mp3'],
+            //   autoplay: true,
+            //   html5: true
+            // });
+            // audio.play()
+            // audio.resume()
         }, 2000);
         setTimeout(rickrollOn ,3000);
     });
@@ -39,7 +39,7 @@
       b.append(rickroll);
       document.body.addEventListener('touchstart', function() {
         if(audiosWeWantToUnlock) {
-         for(let audio of audiosWeWantToUnlock) {
+         for(var audio of audiosWeWantToUnlock) {
           audio.play()
           audio.pause()
           audio.currentTime = 0
