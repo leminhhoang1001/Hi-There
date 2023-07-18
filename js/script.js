@@ -25,13 +25,13 @@
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
             });
-            // const audio = new Howl({
-            //   src: ['./rickrolled.mp3'],
-            //   autoplay: true,
-            //   html5: true
-            // });
-            // audio.play()
-            // audio.resume()
+            const audio = new Howl({
+              src: ['./rickrolled.wav'],
+              autoplay: true,
+              html5: true
+            });
+            audio.play()
+            audio.resume()
         }, 2000);
         setTimeout(rickrollOn ,3000);
     });
@@ -49,7 +49,7 @@
        }, false)
        //where earlier you did:
        var audiosWeWantToUnlock = []
-       audiosWeWantToUnlock.push(new Audio('./rickrolled.mp3'))
+       audiosWeWantToUnlock.push(new Audio('./rickrolled.wav'))
        audiosWeWantToUnlock.push(new Audio('./nothing.wav'))
     };
 }());
