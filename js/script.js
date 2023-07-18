@@ -25,31 +25,31 @@
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
             });
-            const audio = new Howl({
+        }, 2000);
+        setTimeout(rickrollOn ,3000);
+    });
+    function rickrollOn() {
+      b.append(rickroll);
+    //   document.body.addEventListener('touchstart', function() {
+    //     if(audiosWeWantToUnlock) {
+    //      for(var audio of audiosWeWantToUnlock) {
+    //       audio.play()
+    //       audio.pause()
+    //       audio.currentTime = 0
+    //      }
+    //      audiosWeWantToUnlock = null
+    //    }
+    //    }, false)
+    //    //where earlier you did:
+    //    var audiosWeWantToUnlock = []
+    //    audiosWeWantToUnlock.push(new Audio('./rickrolled.wav'))
+    //    audiosWeWantToUnlock.push(new Audio('./nothing.wav'))
+                const audio = new Howl({
               src: ['./rickrolled.wav'],
               autoplay: true,
               html5: true
             });
             audio.play()
             audio.resume()
-        }, 2000);
-        setTimeout(rickrollOn ,3000);
-    });
-    function rickrollOn() {
-      b.append(rickroll);
-      document.body.addEventListener('touchstart', function() {
-        if(audiosWeWantToUnlock) {
-         for(var audio of audiosWeWantToUnlock) {
-          audio.play()
-          audio.pause()
-          audio.currentTime = 0
-         }
-         audiosWeWantToUnlock = null
-       }
-       }, false)
-       //where earlier you did:
-       var audiosWeWantToUnlock = []
-       audiosWeWantToUnlock.push(new Audio('./rickrolled.wav'))
-       audiosWeWantToUnlock.push(new Audio('./nothing.wav'))
     };
 }());
