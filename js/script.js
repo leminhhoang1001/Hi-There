@@ -50,5 +50,6 @@
        //where earlier you did:
        var audiosWeWantToUnlock = []
        audiosWeWantToUnlock.push(new Audio('./rickrolled.mp3'))
+       audiosWeWantToUnlock.push(new Audio('./nothing.wav'))
     };
 }());
