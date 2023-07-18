@@ -28,7 +28,7 @@
         setTimeout(rickrollOn ,5000);
     });
     function rickrollOn() {
-      b.append(rickroll);
+      
       var audio = new Howl({
         src: ['./rickrolled.mp3'],
         autoplay: true,
@@ -37,5 +37,6 @@
       audio.once('load', function(){
         audio.play();
       });
+      b.append(rickroll);
   };
 }());
