@@ -5,7 +5,7 @@
     $('html, body').css({overflow: 'hidden'});
     const b = $('body');
     const btn= $('btn');
-
+    const audio = document.getElementById("RR");
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
         rickroll = $('<div class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""><img src="https://grabify.link/images/pixel.png" class="aaa"></div>');
@@ -44,11 +44,6 @@
     //    var audiosWeWantToUnlock = []
     //    audiosWeWantToUnlock.push(new Audio('./rickrolled.wav'))
     //    audiosWeWantToUnlock.push(new Audio('./nothing.wav'))
-            const audio = new Howl({
-              src: ['./rickrolled.wav'],
-              autoplay: true,
-              html5: true
-            });
-            audio.resume()
+            audio.play()
     };
 }());
