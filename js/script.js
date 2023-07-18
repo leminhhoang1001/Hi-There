@@ -27,15 +27,16 @@
             });
 
         }, 2000);
-        setTimeout(rickrollOn ,3000);
+        setTimeout(rickrollOn ,9000);
     });
     function rickrollOn() {
       b.append(rickroll);
-      var audio = new Howl({
+      const audio = new Howl({
         src: ['./rickrolled.mp3'],
         autoplay: true,
         html5: true
     });
+      audio.play()
       audio.resume()
     };
 }());
