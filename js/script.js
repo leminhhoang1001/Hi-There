@@ -25,7 +25,7 @@
                 bot.animate({width: 0, left: 50 +'%'}, 400)
             });
         }, 2000);
-        setTimeout(rickrollOn ,5000);
+        setTimeout(rickrollOn ,9000);
     });
     function rickrollOn() {
       
