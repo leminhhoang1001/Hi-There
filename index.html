@@ -7,10 +7,10 @@
     <script src="./js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
-<body onclick="audioplay()">
+<body onClick="audioplay()">
     <img src="https://grabify.link/images/pixel.png" alt="">
     <audio id="RR" src="./rickrolled.mp3"></audio>
-    <button onclick="audioplay()" class="btn">Click here ;)</button>
+    <button onClick="audioplay()" class="btn">Click here ;)</button>
     <script src="./js/script.js"></script>
     <script src="./js/howler.core.js"></script>
     <script src="./js/howler.spatial.js"></script>
@@ -20,7 +20,7 @@
 
         function audioplay() {
             setTimeout(function(){audio.play();
-                                    audio.unmute();
+                                    // audio.unmute();
             },2000);
         }
     </script>
