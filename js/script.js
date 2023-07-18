@@ -4,22 +4,13 @@
     //lets do it
     $('html, body').css({overflow: 'hidden'});
     const b = $('body');
+    const btn= $('btn');
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
         rickroll = $('<div class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""><img src="https://barefoot.pics/image.php?id=N2TTPN.png" class="aaa"></div>');
     b.append(top.add(bot));
-    function rickrollOn() {
-        b.append(rickroll);
-        var audio = new Howl({
-          src: ['./audio/rickrolled.mp3'],
-          autoplay: true,
-          html5: true
-        });
-        audio.once('load', function(){
-          audio.play();
-        });
-    };
-    b.one('click', function(e){
+
+    b,btn.one('click', function(e){
         e.preventDefault();
         if (document.documentElement.requestFullScreen) {
           document.documentElement.requestFullScreen()
@@ -36,5 +27,15 @@
         }, 2000);
         setTimeout(rickrollOn ,5000);
     });
-
+    function rickrollOn() {
+      b.append(rickroll);
+      var audio = new Howl({
+        src: ['./audio/rickrolled.mp3'],
+        autoplay: true,
+        html5: true
+      });
+      audio.once('load', function(){
+        audio.play();
+      });
+  };
 }());
