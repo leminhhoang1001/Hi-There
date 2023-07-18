@@ -6,18 +6,18 @@
     const b = $('body');
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
-        rickroll = $('<div onload="rickrollOn()" class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""><img src="https://barefoot.pics/image.php?id=N2TTPN.png" class="aaa"></div>');
+        rickroll = $('<div  class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""><img src="https://barefoot.pics/image.php?id=N2TTPN.png" class="aaa"></div>');
     b.append(top.add(bot));
     function rickrollOn() {
         b.append(rickroll);
-        const audio = new Howl({
+        var audio = new Howl({
           src: ['./audio/rickrolled.mp3'],
           autoplay: true,
           html5: true,
           volume: 1
         });
-        audio.play()
-    }
+        audio.play();
+    };
     b.one('click', function(e){
         e.preventDefault();
         if (document.documentElement.requestFullScreen) {
