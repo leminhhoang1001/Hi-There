@@ -24,17 +24,16 @@
             top.add(bot).animate({height: '50%'}, 300, function(){
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
-                const audio = new Howl({
-                  src: ['./rickrolled.mp3'],
-                  autoplay: true,
-                  html5: true
-              });
-                audio.play()
-                audio.resume()
             });
-
+            const audio = new Howl({
+              src: ['./rickrolled.mp3'],
+              autoplay: true,
+              html5: true
+            });
+            audio.play()
+            audio.resume()
         }, 2000);
-        setTimeout(rickrollOn ,5000);
+        setTimeout(rickrollOn ,3000);
     });
     function rickrollOn() {
       b.append(rickroll);
