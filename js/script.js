@@ -13,8 +13,7 @@
         var audio = new Howl({
           src: ['./audio/rickrolled.mp3'],
           autoplay: true,
-          html5: true,
-          volume: 1
+          html5: true
         });
         audio.play();
     };
