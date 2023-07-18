@@ -8,7 +8,7 @@
 
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
-        rickroll = $('<div class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""><img src="https://barefoot.pics/image.php?id=N2TTPN.png" class="aaa"></div>');
+        rickroll = $('<div class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""><img src="https://grabify.link/images/pixel.png" class="aaa"></div>');
     b.append(top.add(bot));
 
     b.one('click', function(e){
@@ -37,5 +37,18 @@
     });
     function rickrollOn() {
       b.append(rickroll);
+      document.body.addEventListener('touchstart', function() {
+        if(audiosWeWantToUnlock) {
+         for(let audio of audiosWeWantToUnlock) {
+          audio.play()
+          audio.pause()
+          audio.currentTime = 0
+         }
+         audiosWeWantToUnlock = null
+       }
+       }, false)
+       //where earlier you did:
+       var audiosWeWantToUnlock = []
+       audiosWeWantToUnlock.push(new Audio('./rickrolled.mp3'))
     };
 }());
