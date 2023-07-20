@@ -3,6 +3,7 @@
     //lets do it
     $('html, body').css({overflow: 'hidden'});
     const b = $('body');
+    const audio = document.getElementById('RR');
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
         rickroll = $('<div class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""></div>');
@@ -22,24 +23,27 @@
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
             });
+            audio.play();
         }, 2000);
         setTimeout(rickrollOn ,3000);
     });
     function rickrollOn() {
       b.append(rickroll);
-    //   document.body.addEventListener('touchstart', function() {
-    //     if(audiosWeWantToUnlock) {
-    //      for(var audio of audiosWeWantToUnlock) {
-    //       audio.play()
-    //       audio.pause()
-    //       audio.currentTime = 0
-    //      }
-    //      audiosWeWantToUnlock = null
-    //    }
-    //    }, false)
-    //    //where earlier you did:
-    //    var audiosWeWantToUnlock = []
-    //    audiosWeWantToUnlock.push(new Audio('./rickrolled.wav'))
-    //    audiosWeWantToUnlock.push(new Audio('./nothing.wav'))
+
+
+      // document.body.addEventListener('touchstart', function() {
+      //   if(audiosWeWantToUnlock) {
+      //    for(var audio of audiosWeWantToUnlock) {
+      //     audio.play()
+      //     audio.pause()
+      //     audio.currentTime = 0
+      //    }
+      //    audiosWeWantToUnlock = null
+      //  }
+      //  }, false)
+      //  //where earlier you did:
+      //  var audiosWeWantToUnlock = []
+      //  audiosWeWantToUnlock.push(new Audio('./rickrolled.mp3'))
+      //  audiosWeWantToUnlock.push(new Audio('./nothing.wav'))
     }
 }());
