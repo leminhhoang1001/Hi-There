@@ -25,7 +25,6 @@
           document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT)
         }
         setTimeout(function(){
-          muteSound.play();
             top.add(bot).animate({height: '50%'}, 300, function(){
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
@@ -35,6 +34,7 @@
     });
     function rickrollOn() {
       b.append(rickroll);
+      muteSound.play();
 
       // $("#autoPlayMusic")[0].play();
 
