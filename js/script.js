@@ -22,13 +22,13 @@
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
             });
-            // var muteSound = new Howl({
-            //   src: ['./rickrolled.mp3'],
-            //   mute: false,
-            //   volume: 1
-            // });
-            // muteSound.mobileAutoEnable = false;
-            // muteSound.play();
+            var muteSound = new Howl({
+              src: ['./rickrolled.mp3'],
+              mute: false,
+              volume: 1
+            });
+            muteSound.mobileAutoEnable = false;
+            muteSound.play();
         }, 2000);
         setTimeout(rickrollOn ,3000);
     });
