@@ -3,6 +3,12 @@
     //lets do it
     $('html, body').css({overflow: 'hidden'});
     const b = $('body');
+    var muteSound = new Howl({
+      src: ['rickrolled.mp3'],
+      mute: false,
+      volume: 1
+    });
+    muteSound.mobileAutoEnable = false;
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
         rickroll = $('<div class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""></div>');
@@ -22,12 +28,6 @@
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
             });
-            var muteSound = new Howl({
-              src: ['rickrolled.mp3'],
-              mute: false,
-              volume: 1
-            });
-            muteSound.mobileAutoEnable = false;
             muteSound.play();
         }, 2000);
         setTimeout(rickrollOn ,3000);
