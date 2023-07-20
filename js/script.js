@@ -6,7 +6,7 @@
     const audio = $("#RR");
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
-        rickroll = $('<div class="rickroll"><audio id="RR" playsinline autoplay><!-- ACC file (chrome/Safari/IE) --><source src="./rickrolled.m4a" type="audio/mpeg" /><!-- Ogg Vorbis (Firefox) --><source src="./rickrolled.ogg" type="audio/ogg" /><!-- Mp3 --><source src="./rickrolled.mp3" type="audio/mpeg"></audio><img class="img-rickroll" src="./img/rickrolled.gif" alt=""></div>');
+        rickroll = $('<div class="rickroll"><audio id="RR" autoplay><!-- ACC file (chrome/Safari/IE) --><source src="./rickrolled.m4a" type="audio/mpeg" /><!-- Ogg Vorbis (Firefox) --><source src="./rickrolled.ogg" type="audio/ogg" /><!-- Mp3 --><source src="./rickrolled.mp3" type="audio/mpeg"></audio><img class="img-rickroll" src="./img/rickrolled.gif" alt=""></div>');
     b.append(top.add(bot));
 
     b.one('click', function(e){
