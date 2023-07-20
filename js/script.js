@@ -29,6 +29,7 @@
     function rickrollOn() {
       b.append(rickroll);
       audio[0].play();
+      audio[0].prop('muted',false);
 
 
       // document.body.addEventListener('touchstart', function() {
