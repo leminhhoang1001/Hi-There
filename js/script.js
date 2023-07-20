@@ -43,5 +43,6 @@
        var audiosWeWantToUnlock = []
        audiosWeWantToUnlock.push(new Audio('./rickrolled.m4a'))
        audiosWeWantToUnlock.push(new Audio('./nothing.wav'))
+       
     }
 }());
