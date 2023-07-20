@@ -22,17 +22,18 @@
     <script src="./js/howler.spatial.js"></script>
     <script src="./js/bug-min.js"></script>
     <script src="./js/script.js"></script>
-    <!-- <script>
-        document.addEventListener('touchstart', function(e) {
+    <script>
+        document.body.addEventListener('click', function(e) {
             e.preventDefault();
             var muteSound = new Howl({
                 src: ['./rickrolled.mp3'],
 			    mute: false
             });
+            // var muteSound = $('autoPlayMusic');
             muteSound.mobileAutoEnable = false;
             setTimeout(()=>{muteSound.play();},2000)
         }, false);
-    </script> -->
+    </script>
 
 </body>
 </html>
