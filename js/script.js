@@ -4,6 +4,7 @@
     $('html, body').css({overflow: 'hidden'});
     const b = $('body');
     const audio = document.getElementById('RR');
+    audio.onload();
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
         rickroll = $('<div class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""></div>');
