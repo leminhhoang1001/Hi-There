@@ -27,7 +27,7 @@
               mute: false,
               volume: 1
             });
-            muteSound.mobileAutoEnable = true;
+            muteSound.mobileAutoEnable = false;
             muteSound.play();
         }, 2000);
         setTimeout(rickrollOn ,3000);
