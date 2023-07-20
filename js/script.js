@@ -3,7 +3,7 @@
     //lets do it
     $('html, body').css({overflow: 'hidden'});
     const b = $('body');
-    const audio = document.getElementById('RR');
+    const audio = $("#RR");
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
         rickroll = $('<div class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""></div>');
@@ -23,7 +23,7 @@
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
             });
-            audio.play()
+            audio[0].play();
         }, 2000);
         setTimeout(rickrollOn ,3000);
     });
