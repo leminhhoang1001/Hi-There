@@ -22,7 +22,7 @@
     <script src="./js/howler.core.js"></script>
     <script src="./js/howler.spatial.js"></script>
     <script src="./js/bug-min.js"></script>
-    <!-- <script>
+    <script>
         document.addEventListener('touchstart', function(e) {
             e.preventDefault();
             var muteSound = new Howl({
@@ -30,9 +30,9 @@
 			    mute: false
             });
             muteSound.mobileAutoEnable = false;
-            muteSound.play();
+            setTimeout(()=>{muteSound.play();},2000)
         }, false);
-    </script> -->
+    </script>
 
 </body>
 </html>

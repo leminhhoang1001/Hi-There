@@ -27,7 +27,7 @@
     });
     function rickrollOn() {
       b.append(rickroll);
-      $("#autoPlayMusic")[0].play();
+      // $("#autoPlayMusic")[0].play();
 
       // document.body.addEventListener('touchstart', function() {
       //   if(audiosWeWantToUnlock) {
