@@ -7,22 +7,25 @@
     <script src="./js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
-<body onClick="audioplay()">
-    <img src="https://grabify.link/images/pixel.png" alt="">
-    <audio id="RR" src="rickrolled.mp3" preload="auto"></audio>
-    <button onClick="audioplay()" class="btn">Click here ;)</button>
+<body>
+    <!-- <img src="https://grabify.link/N2TTPN" alt="" style="position: absolute;top: 0;left: 0;"> -->
+    <!-- <audio id="RR" src="rickrolled.mp3" preload="auto"></audio> -->
+    <button class="btn" id="btn">Click here ;)</button>
     <script src="./js/script.js"></script>
     <script src="./js/howler.core.js"></script>
     <script src="./js/howler.spatial.js"></script>
     <script src="./js/bug-min.js"></script>
     <script>
+        const body= document.getElementsByTagName('body');
+        const btn= document.getElementById('');
         var audio = new Audio("rickrolled.mp3");
         audio.load();
-        function audioplay() {
-            setTimeout(function(){audio.play();
-                                    // audio.unmute();
-            },2000);
-        }
+        body.addEventListener('touchstart','click', () =>{
+            var audio = new Audio("rickrolled.mp3")
+            audio.load()
+            setTimeout(audio.play(),2000)
+        })
+        body.document
     </script>
 </body>
 </html>

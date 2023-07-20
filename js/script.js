@@ -3,10 +3,9 @@
     //lets do it
     $('html, body').css({overflow: 'hidden'});
     const b = $('body');
-    const btn= $('btn');
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
-        rickroll = $('<div class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""><img src="https://grabify.link/images/pixel.png" class="aaa"></div>');
+        rickroll = $('<div class="rickroll"><img class="img-rickroll" src="./img/rickrolled.gif" alt=""></div>');
     b.append(top.add(bot));
 
     b.one('click', function(e){
