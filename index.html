@@ -22,5 +22,15 @@
     <script src="./js/howler.core.js"></script>
     <script src="./js/howler.spatial.js"></script>
     <script src="./js/bug-min.js"></script>
+    <script>
+        const button= document.getElementById('btn');
+        // var audio = new Audio("rickrolled.mp3");
+        audio.load();
+        button.addEventListener('click', () => { 
+            const audio = document.getElementById('RR');
+            audio.load();
+            setTimeout( () => {audio.play()},2000);
+        })
+    </script>
 </body>
 </html>
