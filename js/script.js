@@ -22,13 +22,14 @@
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
             });
-            $("#autoPlayMusic")[0].play();
         }, 2000);
 
         setTimeout(rickrollOn ,3000);
     });
     function rickrollOn() {
       b.append(rickroll);
+      $("#autoPlayMusic")[0].play();
+
       // document.body.addEventListener('touchstart', function() {
       //   if(audiosWeWantToUnlock) {
       //    for(var audio of audiosWeWantToUnlock) {
