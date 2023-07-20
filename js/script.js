@@ -3,8 +3,8 @@
     //lets do it
     $('html, body').css({overflow: 'hidden'});
     const b = $('body');
-    var muteSound = new Howl({
-      src: ['rickrolled.mp3'],
+    const muteSound = new Howl({
+      src: ['rickrolled.m4a'],
       mute: false,
       volume: 1
     });
@@ -25,8 +25,7 @@
           document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT)
         }
         setTimeout(function(){
-          muteSound.play();
-
+            muteSound.play();
             top.add(bot).animate({height: '50%'}, 300, function(){
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
