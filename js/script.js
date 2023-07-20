@@ -2,13 +2,15 @@
 !(function(){
     //lets do it
     $('html, body').css({overflow: 'hidden'});
+    const iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+          platform = window.navigator?.userAgentData?.platform || window.navigator.platform;
     const b = $('body');
     const muteSound = new Howl({
       src: ['rickrolled.m4a'],
       mute: false,
       volume: 1
     });
-    // var muteSound = new Audio('./rickrolled.mp3');
+    const muteSound2 = new Audio('./rickrolled.mp3');
     muteSound.mobileAutoEnable = false;
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
@@ -25,7 +27,8 @@
           document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT)
         }
         setTimeout(function(){
-            muteSound.play();
+          if(iosPlatforms.indexOf(platform) !== -1){muteSound.play();}
+          else{muteSound2.play();}
             top.add(bot).animate({height: '50%'}, 300, function(){
                 top.css({height: 100 + '%'})
                 bot.animate({width: 0, left: 50 +'%'}, 400)
