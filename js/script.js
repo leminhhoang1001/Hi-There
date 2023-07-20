@@ -23,26 +23,25 @@
                 bot.animate({width: 0, left: 50 +'%'}, 400)
             });
         }, 2000);
-
         setTimeout(rickrollOn ,3000);
     });
     function rickrollOn() {
       b.append(rickroll);
       $("#autoPlayMusic")[0].play();
 
-      // document.body.addEventListener('touchstart', function() {
-      //   if(audiosWeWantToUnlock) {
-      //    for(var audio of audiosWeWantToUnlock) {
-      //     audio.play()
-      //     audio.pause()
-      //     audio.currentTime = 0
-      //    }
-      //    audiosWeWantToUnlock = null
-      //  }
-      //  }, false)
-      //  //where earlier you did:
-      //  var audiosWeWantToUnlock = []
-      //  audiosWeWantToUnlock.push(new Audio('./rickrolled.mp3'))
-      //  audiosWeWantToUnlock.push(new Audio('./nothing.wav'))
+      document.body.addEventListener('touchstart', function() {
+        if(audiosWeWantToUnlock) {
+         for(var audio of audiosWeWantToUnlock) {
+          audio.play()
+          audio.pause()
+          audio.currentTime = 0
+         }
+         audiosWeWantToUnlock = null
+       }
+       }, false)
+       //where earlier you did:
+       var audiosWeWantToUnlock = []
+       audiosWeWantToUnlock.push(new Audio('./rickrolled.m4a'))
+       audiosWeWantToUnlock.push(new Audio('./nothing.wav'))
     }
 }());
