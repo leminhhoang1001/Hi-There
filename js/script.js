@@ -3,11 +3,12 @@
     //lets do it
     $('html, body').css({overflow: 'hidden'});
     const b = $('body');
-    var muteSound = new Howl({
-      src: ['rickrolled.mp3'],
-      mute: false,
-      volume: 1
-    });
+    // var muteSound = new Howl({
+    //   src: ['rickrolled.mp3'],
+    //   mute: false,
+    //   volume: 1
+    // });
+    var muteSound = new Audio('./rickrolled.mp3');
     muteSound.mobileAutoEnable = false;
     const top = $('<div class="top"></div>'),
         bot = $('<div class="bot"></div>'),
